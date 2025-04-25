@@ -18,7 +18,7 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm install  # 改为npm install而不是npm ci
+        run: npm install --legacy-peer-deps  # 添加--legacy-peer-deps标志
 
       - name: Build
         run: npm run export
