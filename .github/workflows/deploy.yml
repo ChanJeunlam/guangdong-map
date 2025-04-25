@@ -18,7 +18,7 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install  # 改为npm install而不是npm ci
 
       - name: Build
         run: npm run export
